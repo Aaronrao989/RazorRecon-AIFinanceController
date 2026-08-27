@@ -1,0 +1,23 @@
+# Render Blueprint for the FastAPI backend (free tier).
+# Deploy: push this repo to GitHub, then in Render "New +" -> "Blueprint" and
+# point it at the repo. Set GROQ_API_KEY and ALLOWED_ORIGINS in the dashboard.
+services:
+  - type: web
+    name: ai-finance-controller-api
+    runtime: python
+    plan: free
+    rootDir: .
+    buildCommand: pip install -e ./core -r backend/requirements.txt
+    startCommand: uvicorn app:app --app-dir backend --host 0.0.0.0 --port $PORT
+    healthCheckPath: /
+    envVars:
+      # Set this in the Render dashboard (secret). The engine reads it from env;
+      # it is never hardcoded. Without it, ambiguous records escalate honestly.
+      - key: GROQ_API_KEY
+        sync: false
+      # Comma-separated list of allowed origins (your Vercel URL), or "*".
+      - key: ALLOWED_ORIGINS
+        sync: false
+      # Ephemeral but writable on the free tier; fine for a single dyno lifetime.
+      - key: DATA_DIR
+        value: /tmp/recon_data

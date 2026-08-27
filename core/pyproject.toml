@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recon-engine"
+version = "0.1.0"
+description = "Standalone multi-source financial reconciliation engine (deterministic rules + bounded LLM exception resolver)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "faker>=24.0",
+]
+
+[project.optional-dependencies]
+# The LLM layer talks to Groq over its OpenAI-compatible endpoint using plain
+# `requests` — no heavy SDK required. `test` pulls pytest.
+llm = ["requests>=2.31"]
+test = ["pytest>=8.0"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["recon_engine*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

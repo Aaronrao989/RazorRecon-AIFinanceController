@@ -1,0 +1,2736 @@
+{
+  "metrics": {
+    "total_records": 60,
+    "auto_matched": 52,
+    "match_rate": 0.8667,
+    "exceptions": 8,
+    "matched_precision": 1.0,
+    "matched_recall": 1.0,
+    "matched_f1": 1.0,
+    "confusion": {
+      "tp": 52,
+      "fp": 0,
+      "fn": 0,
+      "tn": 8
+    },
+    "status_accuracy": 1.0,
+    "false_positive_count": 0,
+    "false_positive_cost": 0,
+    "false_positives": [],
+    "false_negatives": [],
+    "wall_clock_seconds": 0.01,
+    "throughput_rps": 5983.88,
+    "by_status": {
+      "MATCHED": 52,
+      "DATE_SKEW": 1,
+      "MISSING_IN_BANK": 1,
+      "CURRENCY_MISMATCH": 1,
+      "SPLIT_SETTLEMENT": 1,
+      "MISMATCH_AMOUNT": 2,
+      "MISSING_IN_LEDGER": 1,
+      "DUPLICATE_UTR": 1
+    },
+    "llm_calls": 5,
+    "load_errors": 0
+  },
+  "decisions": [
+    {
+      "txn_id": "TXN10000",
+      "order_id": "ORD20000",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b96561.93 matches net \u20b96561.93 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "UZBIKCIDKWNNHJ7X",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10001",
+      "order_id": "ORD20001",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b94399.71 matches net \u20b94399.71 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "QJ7YHL1C32OC6UZH",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10002",
+      "order_id": "ORD20002",
+      "status": "DATE_SKEW",
+      "source": "deterministic-rule",
+      "reason": "bank credit dated 2026-07-31 is T+10 vs settlement, far outside the T+4 window",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "FF0T0PVN9ER14FFY",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10003",
+      "order_id": "ORD20003",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b93305.84 matches net \u20b93305.84 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "T84AZYTJXEPQ85JS",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10004",
+      "order_id": "ORD20004",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b94205.95 matches net \u20b94205.95 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "KXVF1T2TALA753LC",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10005",
+      "order_id": "ORD20005",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b91115.44 matches net \u20b91115.44 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "9TEX8FSV871YZOYN",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10006",
+      "order_id": "ORD20006",
+      "status": "MISSING_IN_BANK",
+      "source": "deterministic-rule",
+      "reason": "no bank credit references this settlement",
+      "confidence": 1.0,
+      "amount_delta": null,
+      "matched_utr": null,
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10007",
+      "order_id": "ORD20007",
+      "status": "CURRENCY_MISMATCH",
+      "source": "deterministic-rule",
+      "reason": "order currency USD is not the base currency INR",
+      "confidence": 1.0,
+      "amount_delta": null,
+      "matched_utr": null,
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10008",
+      "order_id": "ORD20008",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b91831.89 matches net \u20b91831.89 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "5C34DXTAD1IOR56F",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10009",
+      "order_id": "ORD20009",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b97703.62 matches net \u20b97703.62 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "KZ02XRGHC0CLBR7T",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10010",
+      "order_id": "ORD20010",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b97523.98 matches net \u20b97523.98 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "CC5O7UUBCXULJYLJ",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10011",
+      "order_id": "ORD20011",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b95406.99 matches net \u20b95406.99 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "L1CQ99CHJ755NF4Z",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10012",
+      "order_id": "ORD20012",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b95378.96 matches net \u20b95378.96 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "7D5J60FKHMY4SJ6B",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10013",
+      "order_id": "ORD20013",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b96561.52 matches net \u20b96561.52 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "ME9FPZUE8YFBNTPB",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10014",
+      "order_id": "ORD20014",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b97071.44 matches net \u20b97071.44 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "6HID25OWF75935A0",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10015",
+      "order_id": "ORD20015",
+      "status": "MATCHED",
+      "source": "llm-resolver",
+      "reason": "LLM: \u20b93.50 difference is consistent with fee rounding; timing within a plausible settlement delay",
+      "confidence": 0.9,
+      "amount_delta": 3.5,
+      "matched_utr": "53J2D54I3QK2IAGL",
+      "llm_used": true
+    },
+    {
+      "txn_id": "TXN10016",
+      "order_id": "ORD20016",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b97568.73 matches net \u20b97568.73 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "XO9T7E8G8JDP0LVS",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10017",
+      "order_id": "ORD20017",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b97075.27 matches net \u20b97075.27 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "BPS3Y70HP87WXE6S",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10018",
+      "order_id": "ORD20018",
+      "status": "MATCHED",
+      "source": "llm-resolver",
+      "reason": "LLM: \u20b90.00 difference is consistent with fee rounding; timing within a plausible settlement delay",
+      "confidence": 0.9,
+      "amount_delta": 0.0,
+      "matched_utr": "TGXN0GUO4KH2VLPY",
+      "llm_used": true
+    },
+    {
+      "txn_id": "TXN10019",
+      "order_id": "ORD20019",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b96300.73 matches net \u20b96300.73 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "GDSWM31YIHAIR4CO",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10020",
+      "order_id": "ORD20020",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b95748.64 matches net \u20b95748.64 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "OFY6452H2ZQU7EEQ",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10021",
+      "order_id": "ORD20021",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b97445.34 matches net \u20b97445.34 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "36P6QF5Q14J1RIPZ",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10022",
+      "order_id": "ORD20022",
+      "status": "SPLIT_SETTLEMENT",
+      "source": "deterministic-rule",
+      "reason": "net \u20b92477.96 paid across 2 credits summing to \u20b92477.96",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": null,
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10023",
+      "order_id": "ORD20023",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b95995.17 matches net \u20b95995.17 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "4Q0B8IC8BBI4WIRE",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10024",
+      "order_id": "ORD20024",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b93893.63 matches net \u20b93893.63 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "GV0E38DALY8OZCYW",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10025",
+      "order_id": "ORD20025",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b95593.75 matches net \u20b95593.75 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "VE92MPNSM43D8W3Z",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10026",
+      "order_id": "ORD20026",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b91778.05 matches net \u20b91778.05 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "J3TRP0J43D5IQVNB",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10027",
+      "order_id": "ORD20027",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b91819.81 matches net \u20b91819.81 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "2M5ZJA8DZR1YXR2D",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10028",
+      "order_id": "ORD20028",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b93449.63 matches net \u20b93449.63 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "XNTM9TMQLIZL08YG",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10029",
+      "order_id": "ORD20029",
+      "status": "MISMATCH_AMOUNT",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b92356.32 differs from net \u20b92513.00 by \u20b9156.68, beyond gray tolerance",
+      "confidence": 1.0,
+      "amount_delta": 156.68,
+      "matched_utr": "V93KMKZEBBK7W1DA",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10030",
+      "order_id": "ORD20030",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b93713.76 matches net \u20b93713.76 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "J5ECRUYF38DIUOVW",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10031",
+      "order_id": "ORD20031",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b93787.32 matches net \u20b93787.32 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "49KWV08HHXFGCAQV",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10032",
+      "order_id": "ORD20032",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b9727.22 matches net \u20b9727.22 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "K4CIJ2V2HEIFJFC2",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10033",
+      "order_id": "ORD20033",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b93704.12 matches net \u20b93704.12 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "KOJTPV60VAIY4VA1",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10034",
+      "order_id": "ORD20034",
+      "status": "MATCHED",
+      "source": "llm-resolver",
+      "reason": "LLM: \u20b93.50 difference is consistent with fee rounding; timing within a plausible settlement delay",
+      "confidence": 0.9,
+      "amount_delta": 3.5,
+      "matched_utr": "QX6GVWRDMLY4LYK8",
+      "llm_used": true
+    },
+    {
+      "txn_id": "TXN10035",
+      "order_id": "ORD20035",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b93818.89 matches net \u20b93818.89 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "L8OS9XTOGN1W1HT7",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10036",
+      "order_id": "ORD20036",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b96938.64 matches net \u20b96938.64 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "BW2ZLAOI4E8XF7KZ",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10037",
+      "order_id": "ORD20037",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b96600.88 matches net \u20b96600.88 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "QFGV0EC14M2JA04U",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10038",
+      "order_id": "ORD20038",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b96824.50 matches net \u20b96824.50 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "RL1N759IN4OLR6N9",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10039",
+      "order_id": "ORD20039",
+      "status": "MISMATCH_AMOUNT",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b93765.89 differs from net \u20b94115.49 by \u20b9349.60, beyond gray tolerance",
+      "confidence": 1.0,
+      "amount_delta": 349.6,
+      "matched_utr": "SV55PSQ0OXFQ8MYX",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10040",
+      "order_id": "ORD20040",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b97475.37 matches net \u20b97475.37 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "5RTWIYKID91ZDFKB",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10041",
+      "order_id": "ORD20041",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b96318.36 matches net \u20b96318.36 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "NFTU2GC5WI6FQJJA",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10042",
+      "order_id": "ORD20042",
+      "status": "MISSING_IN_LEDGER",
+      "source": "deterministic-rule",
+      "reason": "order_id not found in the order ledger (likely a wrong mapping)",
+      "confidence": 1.0,
+      "amount_delta": null,
+      "matched_utr": null,
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10043",
+      "order_id": "ORD20043",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b92498.22 matches net \u20b92498.22 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "2960361I2HGJ11YE",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10044",
+      "order_id": "ORD20044",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b97103.83 matches net \u20b97103.83 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "LPU0DK0GET8T63J3",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10045",
+      "order_id": "ORD20045",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b97572.35 matches net \u20b97572.35 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "52QC1IYYO4UDOJEN",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10046",
+      "order_id": "ORD20046",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b94768.94 matches net \u20b94768.94 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "DIA5U6HC36KOF8KR",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10047",
+      "order_id": "ORD20047",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b92207.64 matches net \u20b92207.64 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "NN8ZTV05X4W7KYHQ",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10048",
+      "order_id": "ORD20048",
+      "status": "MATCHED",
+      "source": "llm-resolver",
+      "reason": "LLM: \u20b90.00 difference is consistent with fee rounding; timing within a plausible settlement delay",
+      "confidence": 0.9,
+      "amount_delta": 0.0,
+      "matched_utr": "N6XCJ883DHX8BM92",
+      "llm_used": true
+    },
+    {
+      "txn_id": "TXN10049",
+      "order_id": "ORD20049",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b9990.64 matches net \u20b9990.64 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "HH5LF6A4FEJGXAA2",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10050",
+      "order_id": "ORD20050",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b94800.37 matches net \u20b94800.37 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "JEPECQNVQHW06XKX",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10051",
+      "order_id": "ORD20051",
+      "status": "DUPLICATE_UTR",
+      "source": "deterministic-rule",
+      "reason": "UTR PDZP6LFEWVZNVKSP appears 2 times for this settlement",
+      "confidence": 1.0,
+      "amount_delta": null,
+      "matched_utr": "PDZP6LFEWVZNVKSP",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10052",
+      "order_id": "ORD20052",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b96733.20 matches net \u20b96733.20 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "ZHQIMQODPXNF7C3D",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10053",
+      "order_id": "ORD20053",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b95940.83 matches net \u20b95940.83 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "UVULEMX15Z8VMUHX",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10054",
+      "order_id": "ORD20054",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b96692.79 matches net \u20b96692.79 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "N1U3493WXA73JGZL",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10055",
+      "order_id": "ORD20055",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b93058.75 matches net \u20b93058.75 within tolerance at T+0",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "UOFWB0HPMNZ1UDBF",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10056",
+      "order_id": "ORD20056",
+      "status": "MATCHED",
+      "source": "llm-resolver",
+      "reason": "LLM: \u20b93.50 difference is consistent with fee rounding; timing within a plausible settlement delay",
+      "confidence": 0.9,
+      "amount_delta": 3.5,
+      "matched_utr": "XRPJ1EPKYRYBOVAK",
+      "llm_used": true
+    },
+    {
+      "txn_id": "TXN10057",
+      "order_id": "ORD20057",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b96107.50 matches net \u20b96107.50 within tolerance at T+1",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "KERPETIUYMO0PQCL",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10058",
+      "order_id": "ORD20058",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b94687.21 matches net \u20b94687.21 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "PEAL2W37D4IVSOLM",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10059",
+      "order_id": "ORD20059",
+      "status": "MATCHED",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b96193.67 matches net \u20b96193.67 within tolerance at T+2",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "WTG1M8XFDJGF1C8W",
+      "llm_used": false
+    }
+  ],
+  "exceptions": [
+    {
+      "txn_id": "TXN10002",
+      "order_id": "ORD20002",
+      "status": "DATE_SKEW",
+      "source": "deterministic-rule",
+      "reason": "bank credit dated 2026-07-31 is T+10 vs settlement, far outside the T+4 window",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": "FF0T0PVN9ER14FFY",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10006",
+      "order_id": "ORD20006",
+      "status": "MISSING_IN_BANK",
+      "source": "deterministic-rule",
+      "reason": "no bank credit references this settlement",
+      "confidence": 1.0,
+      "amount_delta": null,
+      "matched_utr": null,
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10007",
+      "order_id": "ORD20007",
+      "status": "CURRENCY_MISMATCH",
+      "source": "deterministic-rule",
+      "reason": "order currency USD is not the base currency INR",
+      "confidence": 1.0,
+      "amount_delta": null,
+      "matched_utr": null,
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10022",
+      "order_id": "ORD20022",
+      "status": "SPLIT_SETTLEMENT",
+      "source": "deterministic-rule",
+      "reason": "net \u20b92477.96 paid across 2 credits summing to \u20b92477.96",
+      "confidence": 1.0,
+      "amount_delta": 0.0,
+      "matched_utr": null,
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10029",
+      "order_id": "ORD20029",
+      "status": "MISMATCH_AMOUNT",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b92356.32 differs from net \u20b92513.00 by \u20b9156.68, beyond gray tolerance",
+      "confidence": 1.0,
+      "amount_delta": 156.68,
+      "matched_utr": "V93KMKZEBBK7W1DA",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10039",
+      "order_id": "ORD20039",
+      "status": "MISMATCH_AMOUNT",
+      "source": "deterministic-rule",
+      "reason": "bank credit \u20b93765.89 differs from net \u20b94115.49 by \u20b9349.60, beyond gray tolerance",
+      "confidence": 1.0,
+      "amount_delta": 349.6,
+      "matched_utr": "SV55PSQ0OXFQ8MYX",
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10042",
+      "order_id": "ORD20042",
+      "status": "MISSING_IN_LEDGER",
+      "source": "deterministic-rule",
+      "reason": "order_id not found in the order ledger (likely a wrong mapping)",
+      "confidence": 1.0,
+      "amount_delta": null,
+      "matched_utr": null,
+      "llm_used": false
+    },
+    {
+      "txn_id": "TXN10051",
+      "order_id": "ORD20051",
+      "status": "DUPLICATE_UTR",
+      "source": "deterministic-rule",
+      "reason": "UTR PDZP6LFEWVZNVKSP appears 2 times for this settlement",
+      "confidence": 1.0,
+      "amount_delta": null,
+      "matched_utr": "PDZP6LFEWVZNVKSP",
+      "llm_used": false
+    }
+  ],
+  "audit": [
+    {
+      "txn_id": "TXN10000",
+      "order_id": "ORD20000",
+      "timestamp": "2026-08-24T08:27:46.869011+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10000",
+          "order_id": "ORD20000",
+          "gross": 6720.53,
+          "fee": 134.41,
+          "tax": 24.19,
+          "net": 6561.93,
+          "settled_date": "2026-07-20"
+        },
+        "matched_utr": "UZBIKCIDKWNNHJ7X"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10000",
+        "order_id": "ORD20000",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b96561.93 matches net \u20b96561.93 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "UZBIKCIDKWNNHJ7X",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10001",
+      "order_id": "ORD20001",
+      "timestamp": "2026-08-24T08:27:46.869259+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10001",
+          "order_id": "ORD20001",
+          "gross": 4506.05,
+          "fee": 90.12,
+          "tax": 16.22,
+          "net": 4399.71,
+          "settled_date": "2026-07-08"
+        },
+        "matched_utr": "QJ7YHL1C32OC6UZH"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10001",
+        "order_id": "ORD20001",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b94399.71 matches net \u20b94399.71 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "QJ7YHL1C32OC6UZH",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10002",
+      "order_id": "ORD20002",
+      "timestamp": "2026-08-24T08:27:46.869282+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10002",
+          "order_id": "ORD20002",
+          "gross": 3467.24,
+          "fee": 69.34,
+          "tax": 12.48,
+          "net": 3385.42,
+          "settled_date": "2026-07-21"
+        },
+        "matched_utr": "FF0T0PVN9ER14FFY"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10002",
+        "order_id": "ORD20002",
+        "status": "DATE_SKEW",
+        "source": "deterministic-rule",
+        "reason": "bank credit dated 2026-07-31 is T+10 vs settlement, far outside the T+4 window",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "FF0T0PVN9ER14FFY",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10003",
+      "order_id": "ORD20003",
+      "timestamp": "2026-08-24T08:27:46.869297+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10003",
+          "order_id": "ORD20003",
+          "gross": 3385.75,
+          "fee": 67.72,
+          "tax": 12.19,
+          "net": 3305.84,
+          "settled_date": "2026-07-20"
+        },
+        "matched_utr": "T84AZYTJXEPQ85JS"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10003",
+        "order_id": "ORD20003",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b93305.84 matches net \u20b93305.84 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "T84AZYTJXEPQ85JS",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10004",
+      "order_id": "ORD20004",
+      "timestamp": "2026-08-24T08:27:46.869310+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10004",
+          "order_id": "ORD20004",
+          "gross": 4307.61,
+          "fee": 86.15,
+          "tax": 15.51,
+          "net": 4205.95,
+          "settled_date": "2026-07-04"
+        },
+        "matched_utr": "KXVF1T2TALA753LC"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10004",
+        "order_id": "ORD20004",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b94205.95 matches net \u20b94205.95 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "KXVF1T2TALA753LC",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10005",
+      "order_id": "ORD20005",
+      "timestamp": "2026-08-24T08:27:46.869322+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10005",
+          "order_id": "ORD20005",
+          "gross": 1142.4,
+          "fee": 22.85,
+          "tax": 4.11,
+          "net": 1115.44,
+          "settled_date": "2026-07-16"
+        },
+        "matched_utr": "9TEX8FSV871YZOYN"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10005",
+        "order_id": "ORD20005",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b91115.44 matches net \u20b91115.44 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "9TEX8FSV871YZOYN",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10006",
+      "order_id": "ORD20006",
+      "timestamp": "2026-08-24T08:27:46.869332+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10006",
+          "order_id": "ORD20006",
+          "gross": 1407.53,
+          "fee": 28.15,
+          "tax": 5.07,
+          "net": 1374.31,
+          "settled_date": "2026-07-08"
+        }
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10006",
+        "order_id": "ORD20006",
+        "status": "MISSING_IN_BANK",
+        "source": "deterministic-rule",
+        "reason": "no bank credit references this settlement",
+        "confidence": 1.0,
+        "amount_delta": null,
+        "matched_utr": null,
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10007",
+      "order_id": "ORD20007",
+      "timestamp": "2026-08-24T08:27:46.869341+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10007",
+          "order_id": "ORD20007",
+          "gross": 4045.03,
+          "fee": 80.9,
+          "tax": 14.56,
+          "net": 3949.57,
+          "settled_date": "2026-07-26"
+        }
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10007",
+        "order_id": "ORD20007",
+        "status": "CURRENCY_MISMATCH",
+        "source": "deterministic-rule",
+        "reason": "order currency USD is not the base currency INR",
+        "confidence": 1.0,
+        "amount_delta": null,
+        "matched_utr": null,
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10008",
+      "order_id": "ORD20008",
+      "timestamp": "2026-08-24T08:27:46.869352+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10008",
+          "order_id": "ORD20008",
+          "gross": 1876.16,
+          "fee": 37.52,
+          "tax": 6.75,
+          "net": 1831.89,
+          "settled_date": "2026-07-15"
+        },
+        "matched_utr": "5C34DXTAD1IOR56F"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10008",
+        "order_id": "ORD20008",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b91831.89 matches net \u20b91831.89 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "5C34DXTAD1IOR56F",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10009",
+      "order_id": "ORD20009",
+      "timestamp": "2026-08-24T08:27:46.869362+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10009",
+          "order_id": "ORD20009",
+          "gross": 7889.82,
+          "fee": 157.8,
+          "tax": 28.4,
+          "net": 7703.62,
+          "settled_date": "2026-07-09"
+        },
+        "matched_utr": "KZ02XRGHC0CLBR7T"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10009",
+        "order_id": "ORD20009",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b97703.62 matches net \u20b97703.62 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "KZ02XRGHC0CLBR7T",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10010",
+      "order_id": "ORD20010",
+      "timestamp": "2026-08-24T08:27:46.869373+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10010",
+          "order_id": "ORD20010",
+          "gross": 7705.84,
+          "fee": 154.12,
+          "tax": 27.74,
+          "net": 7523.98,
+          "settled_date": "2026-07-03"
+        },
+        "matched_utr": "CC5O7UUBCXULJYLJ"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10010",
+        "order_id": "ORD20010",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b97523.98 matches net \u20b97523.98 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "CC5O7UUBCXULJYLJ",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10011",
+      "order_id": "ORD20011",
+      "timestamp": "2026-08-24T08:27:46.869383+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10011",
+          "order_id": "ORD20011",
+          "gross": 5537.68,
+          "fee": 110.75,
+          "tax": 19.94,
+          "net": 5406.99,
+          "settled_date": "2026-07-10"
+        },
+        "matched_utr": "L1CQ99CHJ755NF4Z"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10011",
+        "order_id": "ORD20011",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b95406.99 matches net \u20b95406.99 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "L1CQ99CHJ755NF4Z",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10012",
+      "order_id": "ORD20012",
+      "timestamp": "2026-08-24T08:27:46.869394+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10012",
+          "order_id": "ORD20012",
+          "gross": 5508.97,
+          "fee": 110.18,
+          "tax": 19.83,
+          "net": 5378.96,
+          "settled_date": "2026-07-18"
+        },
+        "matched_utr": "7D5J60FKHMY4SJ6B"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10012",
+        "order_id": "ORD20012",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b95378.96 matches net \u20b95378.96 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "7D5J60FKHMY4SJ6B",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10013",
+      "order_id": "ORD20013",
+      "timestamp": "2026-08-24T08:27:46.869404+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10013",
+          "order_id": "ORD20013",
+          "gross": 6720.11,
+          "fee": 134.4,
+          "tax": 24.19,
+          "net": 6561.52,
+          "settled_date": "2026-07-02"
+        },
+        "matched_utr": "ME9FPZUE8YFBNTPB"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10013",
+        "order_id": "ORD20013",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b96561.52 matches net \u20b96561.52 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "ME9FPZUE8YFBNTPB",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10014",
+      "order_id": "ORD20014",
+      "timestamp": "2026-08-24T08:27:46.869414+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10014",
+          "order_id": "ORD20014",
+          "gross": 7242.36,
+          "fee": 144.85,
+          "tax": 26.07,
+          "net": 7071.44,
+          "settled_date": "2026-07-26"
+        },
+        "matched_utr": "6HID25OWF75935A0"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10014",
+        "order_id": "ORD20014",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b97071.44 matches net \u20b97071.44 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "6HID25OWF75935A0",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10015",
+      "order_id": "ORD20015",
+      "timestamp": "2026-08-24T08:27:46.869440+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10015",
+          "order_id": "ORD20015",
+          "gross": 523.84,
+          "fee": 10.48,
+          "tax": 1.89,
+          "net": 511.47,
+          "settled_date": "2026-07-14"
+        },
+        "candidate_bank": {
+          "utr": "53J2D54I3QK2IAGL",
+          "credit_amount": 507.97,
+          "value_date": "2026-07-16",
+          "narration": "RAZORPAY SETTLEMENT TXN10015 NEFT CR"
+        },
+        "order": {
+          "invoice_amount": 523.84,
+          "currency": "INR",
+          "status": "paid"
+        }
+      },
+      "rule_or_layer": "llm-resolver",
+      "ambiguity_reason": "amount off by \u20b93.50 (beyond hard tolerance)",
+      "llm_trace": {
+        "provider": "simulated",
+        "model": "simulated-heuristic",
+        "resolution": "MATCHED",
+        "reason": "\u20b93.50 difference is consistent with fee rounding; timing within a plausible settlement delay",
+        "confidence": 0.9,
+        "raw": null,
+        "guardrail": "passed"
+      },
+      "decision": {
+        "txn_id": "TXN10015",
+        "order_id": "ORD20015",
+        "status": "MATCHED",
+        "source": "llm-resolver",
+        "reason": "LLM: \u20b93.50 difference is consistent with fee rounding; timing within a plausible settlement delay",
+        "confidence": 0.9,
+        "amount_delta": 3.5,
+        "matched_utr": "53J2D54I3QK2IAGL",
+        "llm_used": true
+      }
+    },
+    {
+      "txn_id": "TXN10016",
+      "order_id": "ORD20016",
+      "timestamp": "2026-08-24T08:27:46.869453+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10016",
+          "order_id": "ORD20016",
+          "gross": 7751.67,
+          "fee": 155.03,
+          "tax": 27.91,
+          "net": 7568.73,
+          "settled_date": "2026-07-09"
+        },
+        "matched_utr": "XO9T7E8G8JDP0LVS"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10016",
+        "order_id": "ORD20016",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b97568.73 matches net \u20b97568.73 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "XO9T7E8G8JDP0LVS",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10017",
+      "order_id": "ORD20017",
+      "timestamp": "2026-08-24T08:27:46.869463+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10017",
+          "order_id": "ORD20017",
+          "gross": 7246.29,
+          "fee": 144.93,
+          "tax": 26.09,
+          "net": 7075.27,
+          "settled_date": "2026-07-07"
+        },
+        "matched_utr": "BPS3Y70HP87WXE6S"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10017",
+        "order_id": "ORD20017",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b97075.27 matches net \u20b97075.27 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "BPS3Y70HP87WXE6S",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10018",
+      "order_id": "ORD20018",
+      "timestamp": "2026-08-24T08:27:46.869482+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10018",
+          "order_id": "ORD20018",
+          "gross": 2946.37,
+          "fee": 58.93,
+          "tax": 10.61,
+          "net": 2876.83,
+          "settled_date": "2026-07-23"
+        },
+        "candidate_bank": {
+          "utr": "TGXN0GUO4KH2VLPY",
+          "credit_amount": 2876.83,
+          "value_date": "2026-07-26",
+          "narration": "PG SETTLEMENT SETTLEMENT TXN10018 NEFT CR"
+        },
+        "order": {
+          "invoice_amount": 2946.37,
+          "currency": "INR",
+          "status": "paid"
+        }
+      },
+      "rule_or_layer": "llm-resolver",
+      "ambiguity_reason": "credit landed at T+3 (beyond the T+2 window)",
+      "llm_trace": {
+        "provider": "simulated",
+        "model": "simulated-heuristic",
+        "resolution": "MATCHED",
+        "reason": "\u20b90.00 difference is consistent with fee rounding; timing within a plausible settlement delay",
+        "confidence": 0.9,
+        "raw": null,
+        "guardrail": "passed"
+      },
+      "decision": {
+        "txn_id": "TXN10018",
+        "order_id": "ORD20018",
+        "status": "MATCHED",
+        "source": "llm-resolver",
+        "reason": "LLM: \u20b90.00 difference is consistent with fee rounding; timing within a plausible settlement delay",
+        "confidence": 0.9,
+        "amount_delta": 0.0,
+        "matched_utr": "TGXN0GUO4KH2VLPY",
+        "llm_used": true
+      }
+    },
+    {
+      "txn_id": "TXN10019",
+      "order_id": "ORD20019",
+      "timestamp": "2026-08-24T08:27:46.869493+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10019",
+          "order_id": "ORD20019",
+          "gross": 6453.02,
+          "fee": 129.06,
+          "tax": 23.23,
+          "net": 6300.73,
+          "settled_date": "2026-07-26"
+        },
+        "matched_utr": "GDSWM31YIHAIR4CO"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10019",
+        "order_id": "ORD20019",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b96300.73 matches net \u20b96300.73 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "GDSWM31YIHAIR4CO",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10020",
+      "order_id": "ORD20020",
+      "timestamp": "2026-08-24T08:27:46.869503+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10020",
+          "order_id": "ORD20020",
+          "gross": 5887.59,
+          "fee": 117.75,
+          "tax": 21.2,
+          "net": 5748.64,
+          "settled_date": "2026-07-13"
+        },
+        "matched_utr": "OFY6452H2ZQU7EEQ"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10020",
+        "order_id": "ORD20020",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b95748.64 matches net \u20b95748.64 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "OFY6452H2ZQU7EEQ",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10021",
+      "order_id": "ORD20021",
+      "timestamp": "2026-08-24T08:27:46.869513+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10021",
+          "order_id": "ORD20021",
+          "gross": 7625.3,
+          "fee": 152.51,
+          "tax": 27.45,
+          "net": 7445.34,
+          "settled_date": "2026-07-15"
+        },
+        "matched_utr": "36P6QF5Q14J1RIPZ"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10021",
+        "order_id": "ORD20021",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b97445.34 matches net \u20b97445.34 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "36P6QF5Q14J1RIPZ",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10022",
+      "order_id": "ORD20022",
+      "timestamp": "2026-08-24T08:27:46.869527+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10022",
+          "order_id": "ORD20022",
+          "gross": 2537.86,
+          "fee": 50.76,
+          "tax": 9.14,
+          "net": 2477.96,
+          "settled_date": "2026-07-11"
+        }
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10022",
+        "order_id": "ORD20022",
+        "status": "SPLIT_SETTLEMENT",
+        "source": "deterministic-rule",
+        "reason": "net \u20b92477.96 paid across 2 credits summing to \u20b92477.96",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": null,
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10023",
+      "order_id": "ORD20023",
+      "timestamp": "2026-08-24T08:27:46.869537+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10023",
+          "order_id": "ORD20023",
+          "gross": 6140.07,
+          "fee": 122.8,
+          "tax": 22.1,
+          "net": 5995.17,
+          "settled_date": "2026-07-14"
+        },
+        "matched_utr": "4Q0B8IC8BBI4WIRE"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10023",
+        "order_id": "ORD20023",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b95995.17 matches net \u20b95995.17 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "4Q0B8IC8BBI4WIRE",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10024",
+      "order_id": "ORD20024",
+      "timestamp": "2026-08-24T08:27:46.869547+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10024",
+          "order_id": "ORD20024",
+          "gross": 3987.75,
+          "fee": 79.76,
+          "tax": 14.36,
+          "net": 3893.63,
+          "settled_date": "2026-07-09"
+        },
+        "matched_utr": "GV0E38DALY8OZCYW"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10024",
+        "order_id": "ORD20024",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b93893.63 matches net \u20b93893.63 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "GV0E38DALY8OZCYW",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10025",
+      "order_id": "ORD20025",
+      "timestamp": "2026-08-24T08:27:46.869558+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10025",
+          "order_id": "ORD20025",
+          "gross": 5728.95,
+          "fee": 114.58,
+          "tax": 20.62,
+          "net": 5593.75,
+          "settled_date": "2026-07-10"
+        },
+        "matched_utr": "VE92MPNSM43D8W3Z"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10025",
+        "order_id": "ORD20025",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b95593.75 matches net \u20b95593.75 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "VE92MPNSM43D8W3Z",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10026",
+      "order_id": "ORD20026",
+      "timestamp": "2026-08-24T08:27:46.869568+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10026",
+          "order_id": "ORD20026",
+          "gross": 1821.03,
+          "fee": 36.42,
+          "tax": 6.56,
+          "net": 1778.05,
+          "settled_date": "2026-07-17"
+        },
+        "matched_utr": "J3TRP0J43D5IQVNB"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10026",
+        "order_id": "ORD20026",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b91778.05 matches net \u20b91778.05 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "J3TRP0J43D5IQVNB",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10027",
+      "order_id": "ORD20027",
+      "timestamp": "2026-08-24T08:27:46.869578+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10027",
+          "order_id": "ORD20027",
+          "gross": 1863.8,
+          "fee": 37.28,
+          "tax": 6.71,
+          "net": 1819.81,
+          "settled_date": "2026-07-07"
+        },
+        "matched_utr": "2M5ZJA8DZR1YXR2D"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10027",
+        "order_id": "ORD20027",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b91819.81 matches net \u20b91819.81 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "2M5ZJA8DZR1YXR2D",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10028",
+      "order_id": "ORD20028",
+      "timestamp": "2026-08-24T08:27:46.869588+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10028",
+          "order_id": "ORD20028",
+          "gross": 3533.01,
+          "fee": 70.66,
+          "tax": 12.72,
+          "net": 3449.63,
+          "settled_date": "2026-07-08"
+        },
+        "matched_utr": "XNTM9TMQLIZL08YG"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10028",
+        "order_id": "ORD20028",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b93449.63 matches net \u20b93449.63 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "XNTM9TMQLIZL08YG",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10029",
+      "order_id": "ORD20029",
+      "timestamp": "2026-08-24T08:27:46.869601+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10029",
+          "order_id": "ORD20029",
+          "gross": 2573.75,
+          "fee": 51.48,
+          "tax": 9.27,
+          "net": 2513.0,
+          "settled_date": "2026-07-19"
+        },
+        "matched_utr": "V93KMKZEBBK7W1DA"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10029",
+        "order_id": "ORD20029",
+        "status": "MISMATCH_AMOUNT",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b92356.32 differs from net \u20b92513.00 by \u20b9156.68, beyond gray tolerance",
+        "confidence": 1.0,
+        "amount_delta": 156.68,
+        "matched_utr": "V93KMKZEBBK7W1DA",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10030",
+      "order_id": "ORD20030",
+      "timestamp": "2026-08-24T08:27:46.869611+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10030",
+          "order_id": "ORD20030",
+          "gross": 3803.52,
+          "fee": 76.07,
+          "tax": 13.69,
+          "net": 3713.76,
+          "settled_date": "2026-07-06"
+        },
+        "matched_utr": "J5ECRUYF38DIUOVW"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10030",
+        "order_id": "ORD20030",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b93713.76 matches net \u20b93713.76 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "J5ECRUYF38DIUOVW",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10031",
+      "order_id": "ORD20031",
+      "timestamp": "2026-08-24T08:27:46.869622+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10031",
+          "order_id": "ORD20031",
+          "gross": 3878.86,
+          "fee": 77.58,
+          "tax": 13.96,
+          "net": 3787.32,
+          "settled_date": "2026-07-15"
+        },
+        "matched_utr": "49KWV08HHXFGCAQV"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10031",
+        "order_id": "ORD20031",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b93787.32 matches net \u20b93787.32 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "49KWV08HHXFGCAQV",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10032",
+      "order_id": "ORD20032",
+      "timestamp": "2026-08-24T08:27:46.869632+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10032",
+          "order_id": "ORD20032",
+          "gross": 744.8,
+          "fee": 14.9,
+          "tax": 2.68,
+          "net": 727.22,
+          "settled_date": "2026-07-10"
+        },
+        "matched_utr": "K4CIJ2V2HEIFJFC2"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10032",
+        "order_id": "ORD20032",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b9727.22 matches net \u20b9727.22 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "K4CIJ2V2HEIFJFC2",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10033",
+      "order_id": "ORD20033",
+      "timestamp": "2026-08-24T08:27:46.869643+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10033",
+          "order_id": "ORD20033",
+          "gross": 3793.65,
+          "fee": 75.87,
+          "tax": 13.66,
+          "net": 3704.12,
+          "settled_date": "2026-07-15"
+        },
+        "matched_utr": "KOJTPV60VAIY4VA1"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10033",
+        "order_id": "ORD20033",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b93704.12 matches net \u20b93704.12 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "KOJTPV60VAIY4VA1",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10034",
+      "order_id": "ORD20034",
+      "timestamp": "2026-08-24T08:27:46.869659+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10034",
+          "order_id": "ORD20034",
+          "gross": 451.69,
+          "fee": 9.03,
+          "tax": 1.63,
+          "net": 441.03,
+          "settled_date": "2026-07-25"
+        },
+        "candidate_bank": {
+          "utr": "QX6GVWRDMLY4LYK8",
+          "credit_amount": 437.53,
+          "value_date": "2026-07-25",
+          "narration": "RAZORPAY SETTLEMENT TXN10034 NEFT CR"
+        },
+        "order": {
+          "invoice_amount": 451.69,
+          "currency": "INR",
+          "status": "paid"
+        }
+      },
+      "rule_or_layer": "llm-resolver",
+      "ambiguity_reason": "amount off by \u20b93.50 (beyond hard tolerance)",
+      "llm_trace": {
+        "provider": "simulated",
+        "model": "simulated-heuristic",
+        "resolution": "MATCHED",
+        "reason": "\u20b93.50 difference is consistent with fee rounding; timing within a plausible settlement delay",
+        "confidence": 0.9,
+        "raw": null,
+        "guardrail": "passed"
+      },
+      "decision": {
+        "txn_id": "TXN10034",
+        "order_id": "ORD20034",
+        "status": "MATCHED",
+        "source": "llm-resolver",
+        "reason": "LLM: \u20b93.50 difference is consistent with fee rounding; timing within a plausible settlement delay",
+        "confidence": 0.9,
+        "amount_delta": 3.5,
+        "matched_utr": "QX6GVWRDMLY4LYK8",
+        "llm_used": true
+      }
+    },
+    {
+      "txn_id": "TXN10035",
+      "order_id": "ORD20035",
+      "timestamp": "2026-08-24T08:27:46.869670+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10035",
+          "order_id": "ORD20035",
+          "gross": 3911.19,
+          "fee": 78.22,
+          "tax": 14.08,
+          "net": 3818.89,
+          "settled_date": "2026-07-11"
+        },
+        "matched_utr": "L8OS9XTOGN1W1HT7"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10035",
+        "order_id": "ORD20035",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b93818.89 matches net \u20b93818.89 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "L8OS9XTOGN1W1HT7",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10036",
+      "order_id": "ORD20036",
+      "timestamp": "2026-08-24T08:27:46.869683+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10036",
+          "order_id": "ORD20036",
+          "gross": 7106.35,
+          "fee": 142.13,
+          "tax": 25.58,
+          "net": 6938.64,
+          "settled_date": "2026-07-16"
+        },
+        "matched_utr": "BW2ZLAOI4E8XF7KZ"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10036",
+        "order_id": "ORD20036",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b96938.64 matches net \u20b96938.64 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "BW2ZLAOI4E8XF7KZ",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10037",
+      "order_id": "ORD20037",
+      "timestamp": "2026-08-24T08:27:46.869694+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10037",
+          "order_id": "ORD20037",
+          "gross": 6760.43,
+          "fee": 135.21,
+          "tax": 24.34,
+          "net": 6600.88,
+          "settled_date": "2026-07-16"
+        },
+        "matched_utr": "QFGV0EC14M2JA04U"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10037",
+        "order_id": "ORD20037",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b96600.88 matches net \u20b96600.88 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "QFGV0EC14M2JA04U",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10038",
+      "order_id": "ORD20038",
+      "timestamp": "2026-08-24T08:27:46.869705+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10038",
+          "order_id": "ORD20038",
+          "gross": 6989.45,
+          "fee": 139.79,
+          "tax": 25.16,
+          "net": 6824.5,
+          "settled_date": "2026-07-15"
+        },
+        "matched_utr": "RL1N759IN4OLR6N9"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10038",
+        "order_id": "ORD20038",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b96824.50 matches net \u20b96824.50 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "RL1N759IN4OLR6N9",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10039",
+      "order_id": "ORD20039",
+      "timestamp": "2026-08-24T08:27:46.869716+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10039",
+          "order_id": "ORD20039",
+          "gross": 4214.96,
+          "fee": 84.3,
+          "tax": 15.17,
+          "net": 4115.49,
+          "settled_date": "2026-07-02"
+        },
+        "matched_utr": "SV55PSQ0OXFQ8MYX"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10039",
+        "order_id": "ORD20039",
+        "status": "MISMATCH_AMOUNT",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b93765.89 differs from net \u20b94115.49 by \u20b9349.60, beyond gray tolerance",
+        "confidence": 1.0,
+        "amount_delta": 349.6,
+        "matched_utr": "SV55PSQ0OXFQ8MYX",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10040",
+      "order_id": "ORD20040",
+      "timestamp": "2026-08-24T08:27:46.869726+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10040",
+          "order_id": "ORD20040",
+          "gross": 7656.05,
+          "fee": 153.12,
+          "tax": 27.56,
+          "net": 7475.37,
+          "settled_date": "2026-07-21"
+        },
+        "matched_utr": "5RTWIYKID91ZDFKB"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10040",
+        "order_id": "ORD20040",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b97475.37 matches net \u20b97475.37 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "5RTWIYKID91ZDFKB",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10041",
+      "order_id": "ORD20041",
+      "timestamp": "2026-08-24T08:27:46.869736+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10041",
+          "order_id": "ORD20041",
+          "gross": 6471.08,
+          "fee": 129.42,
+          "tax": 23.3,
+          "net": 6318.36,
+          "settled_date": "2026-07-10"
+        },
+        "matched_utr": "NFTU2GC5WI6FQJJA"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10041",
+        "order_id": "ORD20041",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b96318.36 matches net \u20b96318.36 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "NFTU2GC5WI6FQJJA",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10042",
+      "order_id": "ORD20042",
+      "timestamp": "2026-08-24T08:27:46.869744+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10042",
+          "order_id": "ORD20042",
+          "gross": 7259.07,
+          "fee": 145.18,
+          "tax": 26.13,
+          "net": 7087.76,
+          "settled_date": "2026-07-22"
+        }
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10042",
+        "order_id": "ORD20042",
+        "status": "MISSING_IN_LEDGER",
+        "source": "deterministic-rule",
+        "reason": "order_id not found in the order ledger (likely a wrong mapping)",
+        "confidence": 1.0,
+        "amount_delta": null,
+        "matched_utr": null,
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10043",
+      "order_id": "ORD20043",
+      "timestamp": "2026-08-24T08:27:46.869754+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10043",
+          "order_id": "ORD20043",
+          "gross": 2558.6,
+          "fee": 51.17,
+          "tax": 9.21,
+          "net": 2498.22,
+          "settled_date": "2026-07-19"
+        },
+        "matched_utr": "2960361I2HGJ11YE"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10043",
+        "order_id": "ORD20043",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b92498.22 matches net \u20b92498.22 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "2960361I2HGJ11YE",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10044",
+      "order_id": "ORD20044",
+      "timestamp": "2026-08-24T08:27:46.869764+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10044",
+          "order_id": "ORD20044",
+          "gross": 7275.53,
+          "fee": 145.51,
+          "tax": 26.19,
+          "net": 7103.83,
+          "settled_date": "2026-07-21"
+        },
+        "matched_utr": "LPU0DK0GET8T63J3"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10044",
+        "order_id": "ORD20044",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b97103.83 matches net \u20b97103.83 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "LPU0DK0GET8T63J3",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10045",
+      "order_id": "ORD20045",
+      "timestamp": "2026-08-24T08:27:46.869774+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10045",
+          "order_id": "ORD20045",
+          "gross": 7755.38,
+          "fee": 155.11,
+          "tax": 27.92,
+          "net": 7572.35,
+          "settled_date": "2026-07-10"
+        },
+        "matched_utr": "52QC1IYYO4UDOJEN"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10045",
+        "order_id": "ORD20045",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b97572.35 matches net \u20b97572.35 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "52QC1IYYO4UDOJEN",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10046",
+      "order_id": "ORD20046",
+      "timestamp": "2026-08-24T08:27:46.869785+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10046",
+          "order_id": "ORD20046",
+          "gross": 4884.2,
+          "fee": 97.68,
+          "tax": 17.58,
+          "net": 4768.94,
+          "settled_date": "2026-07-21"
+        },
+        "matched_utr": "DIA5U6HC36KOF8KR"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10046",
+        "order_id": "ORD20046",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b94768.94 matches net \u20b94768.94 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "DIA5U6HC36KOF8KR",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10047",
+      "order_id": "ORD20047",
+      "timestamp": "2026-08-24T08:27:46.869795+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10047",
+          "order_id": "ORD20047",
+          "gross": 2261.0,
+          "fee": 45.22,
+          "tax": 8.14,
+          "net": 2207.64,
+          "settled_date": "2026-07-18"
+        },
+        "matched_utr": "NN8ZTV05X4W7KYHQ"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10047",
+        "order_id": "ORD20047",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b92207.64 matches net \u20b92207.64 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "NN8ZTV05X4W7KYHQ",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10048",
+      "order_id": "ORD20048",
+      "timestamp": "2026-08-24T08:27:46.869808+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10048",
+          "order_id": "ORD20048",
+          "gross": 6915.88,
+          "fee": 138.32,
+          "tax": 24.9,
+          "net": 6752.66,
+          "settled_date": "2026-07-04"
+        },
+        "candidate_bank": {
+          "utr": "N6XCJ883DHX8BM92",
+          "credit_amount": 6752.66,
+          "value_date": "2026-07-07",
+          "narration": "RAZORPAYX SETTLEMENT TXN10048 NEFT CR"
+        },
+        "order": {
+          "invoice_amount": 6915.88,
+          "currency": "INR",
+          "status": "paid"
+        }
+      },
+      "rule_or_layer": "llm-resolver",
+      "ambiguity_reason": "credit landed at T+3 (beyond the T+2 window)",
+      "llm_trace": {
+        "provider": "simulated",
+        "model": "simulated-heuristic",
+        "resolution": "MATCHED",
+        "reason": "\u20b90.00 difference is consistent with fee rounding; timing within a plausible settlement delay",
+        "confidence": 0.9,
+        "raw": null,
+        "guardrail": "passed"
+      },
+      "decision": {
+        "txn_id": "TXN10048",
+        "order_id": "ORD20048",
+        "status": "MATCHED",
+        "source": "llm-resolver",
+        "reason": "LLM: \u20b90.00 difference is consistent with fee rounding; timing within a plausible settlement delay",
+        "confidence": 0.9,
+        "amount_delta": 0.0,
+        "matched_utr": "N6XCJ883DHX8BM92",
+        "llm_used": true
+      }
+    },
+    {
+      "txn_id": "TXN10049",
+      "order_id": "ORD20049",
+      "timestamp": "2026-08-24T08:27:46.869819+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10049",
+          "order_id": "ORD20049",
+          "gross": 1014.58,
+          "fee": 20.29,
+          "tax": 3.65,
+          "net": 990.64,
+          "settled_date": "2026-07-25"
+        },
+        "matched_utr": "HH5LF6A4FEJGXAA2"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10049",
+        "order_id": "ORD20049",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b9990.64 matches net \u20b9990.64 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "HH5LF6A4FEJGXAA2",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10050",
+      "order_id": "ORD20050",
+      "timestamp": "2026-08-24T08:27:46.869829+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10050",
+          "order_id": "ORD20050",
+          "gross": 4916.4,
+          "fee": 98.33,
+          "tax": 17.7,
+          "net": 4800.37,
+          "settled_date": "2026-07-01"
+        },
+        "matched_utr": "JEPECQNVQHW06XKX"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10050",
+        "order_id": "ORD20050",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b94800.37 matches net \u20b94800.37 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "JEPECQNVQHW06XKX",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10051",
+      "order_id": "ORD20051",
+      "timestamp": "2026-08-24T08:27:46.869839+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10051",
+          "order_id": "ORD20051",
+          "gross": 956.19,
+          "fee": 19.12,
+          "tax": 3.44,
+          "net": 933.63,
+          "settled_date": "2026-07-16"
+        },
+        "matched_utr": "PDZP6LFEWVZNVKSP"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10051",
+        "order_id": "ORD20051",
+        "status": "DUPLICATE_UTR",
+        "source": "deterministic-rule",
+        "reason": "UTR PDZP6LFEWVZNVKSP appears 2 times for this settlement",
+        "confidence": 1.0,
+        "amount_delta": null,
+        "matched_utr": "PDZP6LFEWVZNVKSP",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10052",
+      "order_id": "ORD20052",
+      "timestamp": "2026-08-24T08:27:46.869852+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10052",
+          "order_id": "ORD20052",
+          "gross": 6895.95,
+          "fee": 137.92,
+          "tax": 24.83,
+          "net": 6733.2,
+          "settled_date": "2026-07-21"
+        },
+        "matched_utr": "ZHQIMQODPXNF7C3D"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10052",
+        "order_id": "ORD20052",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b96733.20 matches net \u20b96733.20 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "ZHQIMQODPXNF7C3D",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10053",
+      "order_id": "ORD20053",
+      "timestamp": "2026-08-24T08:27:46.869863+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10053",
+          "order_id": "ORD20053",
+          "gross": 6084.42,
+          "fee": 121.69,
+          "tax": 21.9,
+          "net": 5940.83,
+          "settled_date": "2026-07-12"
+        },
+        "matched_utr": "UVULEMX15Z8VMUHX"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10053",
+        "order_id": "ORD20053",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b95940.83 matches net \u20b95940.83 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "UVULEMX15Z8VMUHX",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10054",
+      "order_id": "ORD20054",
+      "timestamp": "2026-08-24T08:27:46.869873+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10054",
+          "order_id": "ORD20054",
+          "gross": 6854.56,
+          "fee": 137.09,
+          "tax": 24.68,
+          "net": 6692.79,
+          "settled_date": "2026-07-12"
+        },
+        "matched_utr": "N1U3493WXA73JGZL"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10054",
+        "order_id": "ORD20054",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b96692.79 matches net \u20b96692.79 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "N1U3493WXA73JGZL",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10055",
+      "order_id": "ORD20055",
+      "timestamp": "2026-08-24T08:27:46.869884+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10055",
+          "order_id": "ORD20055",
+          "gross": 3132.68,
+          "fee": 62.65,
+          "tax": 11.28,
+          "net": 3058.75,
+          "settled_date": "2026-07-06"
+        },
+        "matched_utr": "UOFWB0HPMNZ1UDBF"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10055",
+        "order_id": "ORD20055",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b93058.75 matches net \u20b93058.75 within tolerance at T+0",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "UOFWB0HPMNZ1UDBF",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10056",
+      "order_id": "ORD20056",
+      "timestamp": "2026-08-24T08:27:46.869900+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10056",
+          "order_id": "ORD20056",
+          "gross": 485.89,
+          "fee": 9.72,
+          "tax": 1.75,
+          "net": 474.42,
+          "settled_date": "2026-07-09"
+        },
+        "candidate_bank": {
+          "utr": "XRPJ1EPKYRYBOVAK",
+          "credit_amount": 470.92,
+          "value_date": "2026-07-10",
+          "narration": "RAZORPAYX SETTLEMENT TXN10056 NEFT CR"
+        },
+        "order": {
+          "invoice_amount": 485.89,
+          "currency": "INR",
+          "status": "paid"
+        }
+      },
+      "rule_or_layer": "llm-resolver",
+      "ambiguity_reason": "amount off by \u20b93.50 (beyond hard tolerance)",
+      "llm_trace": {
+        "provider": "simulated",
+        "model": "simulated-heuristic",
+        "resolution": "MATCHED",
+        "reason": "\u20b93.50 difference is consistent with fee rounding; timing within a plausible settlement delay",
+        "confidence": 0.9,
+        "raw": null,
+        "guardrail": "passed"
+      },
+      "decision": {
+        "txn_id": "TXN10056",
+        "order_id": "ORD20056",
+        "status": "MATCHED",
+        "source": "llm-resolver",
+        "reason": "LLM: \u20b93.50 difference is consistent with fee rounding; timing within a plausible settlement delay",
+        "confidence": 0.9,
+        "amount_delta": 3.5,
+        "matched_utr": "XRPJ1EPKYRYBOVAK",
+        "llm_used": true
+      }
+    },
+    {
+      "txn_id": "TXN10057",
+      "order_id": "ORD20057",
+      "timestamp": "2026-08-24T08:27:46.869911+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10057",
+          "order_id": "ORD20057",
+          "gross": 6255.12,
+          "fee": 125.1,
+          "tax": 22.52,
+          "net": 6107.5,
+          "settled_date": "2026-07-25"
+        },
+        "matched_utr": "KERPETIUYMO0PQCL"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10057",
+        "order_id": "ORD20057",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b96107.50 matches net \u20b96107.50 within tolerance at T+1",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "KERPETIUYMO0PQCL",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10058",
+      "order_id": "ORD20058",
+      "timestamp": "2026-08-24T08:27:46.869922+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10058",
+          "order_id": "ORD20058",
+          "gross": 4800.5,
+          "fee": 96.01,
+          "tax": 17.28,
+          "net": 4687.21,
+          "settled_date": "2026-07-23"
+        },
+        "matched_utr": "PEAL2W37D4IVSOLM"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10058",
+        "order_id": "ORD20058",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b94687.21 matches net \u20b94687.21 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "PEAL2W37D4IVSOLM",
+        "llm_used": false
+      }
+    },
+    {
+      "txn_id": "TXN10059",
+      "order_id": "ORD20059",
+      "timestamp": "2026-08-24T08:27:46.869932+00:00",
+      "inputs_seen": {
+        "settlement": {
+          "txn_id": "TXN10059",
+          "order_id": "ORD20059",
+          "gross": 6343.38,
+          "fee": 126.87,
+          "tax": 22.84,
+          "net": 6193.67,
+          "settled_date": "2026-07-03"
+        },
+        "matched_utr": "WTG1M8XFDJGF1C8W"
+      },
+      "rule_or_layer": "deterministic",
+      "ambiguity_reason": null,
+      "llm_trace": null,
+      "decision": {
+        "txn_id": "TXN10059",
+        "order_id": "ORD20059",
+        "status": "MATCHED",
+        "source": "deterministic-rule",
+        "reason": "bank credit \u20b96193.67 matches net \u20b96193.67 within tolerance at T+2",
+        "confidence": 1.0,
+        "amount_delta": 0.0,
+        "matched_utr": "WTG1M8XFDJGF1C8W",
+        "llm_used": false
+      }
+    }
+  ]
+}

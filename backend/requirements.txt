@@ -1,0 +1,8 @@
+# NOTE: the core engine (recon-engine) is installed separately from ../core.
+# Locally:  pip install -e ./core -r backend/requirements.txt   (run from repo root)
+# Render:   Build Command = pip install -e ./core -r backend/requirements.txt
+fastapi>=0.110
+uvicorn[standard]>=0.29
+requests>=2.31
+pydantic>=2.6
+python-dotenv>=1.0

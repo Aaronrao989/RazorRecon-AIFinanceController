@@ -1,0 +1,64 @@
+txn_id,order_id,true_status,is_true_match,dirty,kind,note
+TXN10000,ORD20000,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10001,ORD20001,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10002,ORD20002,DATE_SKEW,False,True,date_skew_hard,bank credit far outside the settlement date window
+TXN10003,ORD20003,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10004,ORD20004,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10005,ORD20005,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10006,ORD20006,MISSING_IN_BANK,False,True,missing_in_bank,no matching bank credit was ever received
+TXN10007,ORD20007,CURRENCY_MISMATCH,False,True,currency_mismatch,order booked in a non-base currency (USD)
+TXN10008,ORD20008,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10009,ORD20009,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10010,ORD20010,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10011,ORD20011,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10012,ORD20012,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10013,ORD20013,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10014,ORD20014,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10015,ORD20015,MATCHED,True,True,fee_rounding_gray,fee-rounding gray zone (~₹3.5 short) — LLM should confirm MATCHED
+TXN10016,ORD20016,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10017,ORD20017,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10018,ORD20018,MATCHED,True,True,date_skew_gray,date skew T+3 (gray) — LLM should confirm MATCHED
+TXN10019,ORD20019,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10020,ORD20020,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10021,ORD20021,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10022,ORD20022,SPLIT_SETTLEMENT,False,True,split_settlement,one settlement paid across two bank credits
+TXN10023,ORD20023,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10024,ORD20024,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10025,ORD20025,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10026,ORD20026,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10027,ORD20027,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10028,ORD20028,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10029,ORD20029,MISMATCH_AMOUNT,False,True,mismatch_amount,bank credit differs from net beyond gray tolerance
+TXN10030,ORD20030,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10031,ORD20031,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10032,ORD20032,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10033,ORD20033,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10034,ORD20034,MATCHED,True,True,fee_rounding_gray,fee-rounding gray zone (~₹3.5 short) — LLM should confirm MATCHED
+TXN10035,ORD20035,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10036,ORD20036,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10037,ORD20037,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10038,ORD20038,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10039,ORD20039,MISMATCH_AMOUNT,False,True,mismatch_amount,bank credit differs from net beyond gray tolerance
+TXN10040,ORD20040,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10041,ORD20041,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10042,ORD20042,MISSING_IN_LEDGER,False,True,missing_in_ledger,settlement's order_id is absent from the order ledger
+TXN10043,ORD20043,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10044,ORD20044,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10045,ORD20045,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10046,ORD20046,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10047,ORD20047,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10048,ORD20048,MATCHED,True,True,date_skew_gray,date skew T+3 (gray) — LLM should confirm MATCHED
+TXN10049,ORD20049,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10050,ORD20050,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10051,ORD20051,DUPLICATE_UTR,False,True,duplicate_utr,same UTR appears twice in the bank statement
+TXN10052,ORD20052,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10053,ORD20053,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10054,ORD20054,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10055,ORD20055,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10056,ORD20056,MATCHED,True,True,fee_rounding_gray,fee-rounding gray zone (~₹3.5 short) — LLM should confirm MATCHED
+TXN10057,ORD20057,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10058,ORD20058,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+TXN10059,ORD20059,MATCHED,True,False,clean,clean: all three sources agree within tolerance
+INJTXN0001,INJORD0001,SPLIT_SETTLEMENT,False,True,injected_split,net ₹5388.34 split across two credits (₹3233.00+₹2155.34); a third credit ₹2694.17 shares the reference — agent must find the true pair
+INJTXN0002,INJORD0002,SPLIT_SETTLEMENT,False,True,injected_split,net ₹3858.83 split across two credits (₹2315.30+₹1543.53); a third credit ₹1929.42 shares the reference — agent must find the true pair
+INJTXN0003,INJORD0003,SPLIT_SETTLEMENT,False,True,injected_split,net ₹2495.48 split across two credits (₹1497.29+₹998.19); a third credit ₹1247.74 shares the reference — agent must find the true pair
